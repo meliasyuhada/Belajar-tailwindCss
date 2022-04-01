@@ -1,0 +1,94 @@
+Materi dari Pak Shandika Galih
+https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h 
+
+
+link tailwind :
+tailwindcss.com
+
+"Sebuah utility-first framework yang didalamnya terdapat banyak kelas kelas"
+1. Apa itu utility-first
+=> kelas yang berfungsi persis satu hal saja. 
+
+"sebuah framework yang dapat membuat kita dengan cepat membangun website yang moderen, ' semuanya bisa kita buat
+tanpa meninggalkan codingan html kita' bahkan kita tidak perlu menyentuh file css nya, karena file css nya telah
+dibuat oleh utility-utilitynya"
+
+=> dibuat oleh Adam Wathan, 1 November 2017
+=> versi, saat ini sudah 3.0.7
+=> link github (https://github.com/tailwindlabs/tailwindcss)
+
+utility yang bisa kita modifikasi didalam html
+1. preflight(css reset => mereset property2 default dalam element2 html)
+2. layout
+3. flaxbox & grid
+4. spacing & sizing
+5. typograpi
+6. background & borders
+7. effect & filter
+8. transition, transformation, & animation
+9. tabels dll
+
+features yang disediakan oleh tailwind
+=> interactivity (bisa memberikan interaksi pada element, menggunakan utility kelas)
+    1. Pseudo-classes 
+        (hover[untuk membuat interaksi pada component yang kita buat], 
+        focus[fokus kesalah ke kursor yang kita arahkan], 
+        active[ketika sebuah element kita klik], 
+        first[untuk memilih element pertama], 
+        last[untuk memilih element terakhir], ...)
+    2. Pseudo-element
+        (before, after, placeholder, file, selection, ...)
+
+=> responsive design (kita bisa merancang resoonsif desain website kita menggunakan utility kelas)
+    1. harus memberikan kelas yang bernama dark. kalau tidak diberikan dark, maka ia tidak akan berpengaruh.
+=> dark mode (bisa membuat dark mode untuk aplikasi kita)
+=> reusability (agar bisa diupgade dan digunakan berulang kali)
+=> custom styles (bisa memberikan/menentukan style custom kita sendiri)
+=> functions & directives ()
+
+perbedaan boostrap dan tailwind
+=> keduanya berbeda.
+=> boostrap merupakan ui framework(karena didalamnya terdapat utility kelas dan komponen juga)
+=> tailwind merupakan utility-first framework(gak punya komponens)
+
+PERBEDAAN
+
+Vanila css
+=> Keuntungan
+    1. kendali penuh
+    2. code css lebih optimal
+   kekurangan
+    1. buat semuanya dari awal
+    2. pembuatan lebih lama
+
+Boostrap 5
+=> Keuntungan
+    1. pembuatan sangat cepat
+    2. sangat ramah untuk pemuala
+    3. komponen yang siap digunakan
+   kerugian
+    1. tidak ada kendali
+    2.banyak kode css tidak terpakai
+    3. website terlihat mirip
+
+TailwindCSS 3
+=> Keuntungan
+    1. pembuatan lebih cepat
+    2. mengikuti best pracrices
+    3. code css optimal
+   kerugian
+   1. code html menjadi 'jelek'
+   2. Harus paham css
+
+
+hal yang harus dipelajari belum belajar tailwind
+1. html
+2. css
+3. Boostrap
+4. CSS Pre-processor
+5. NPM
+
+software requitments
+1. web browser : Crome
+2. Code editor : Visual studio code
+3. package manager : Node.js

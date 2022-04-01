@@ -1,0 +1,20 @@
+Materi dari Pak Shandika Galih
+https://www.youtube.com/watch?v=ELCr9MyRTH8&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h&index=2
+
+Kenapa TailwindCSS ?
+=> "Best practices don't actually work"
+=> apa yang sering digunakan orang2 tidak berhasil, 
+
+css utility classes and "Separation of concerns"
+https://adamwathan.me/css-utility-classes-and-separation-of-concerns/
+
+Separation of concerns
+https://en.wikipedia.org/wiki/Separation_of_concerns
+
+Separation of concerns didalam web development
+=> separation = strukture[HTML]
+=> concerns = presentation[CSS]
+=> of = behaviour[JS]
+
+fase 1: "Semantic CSS"
+=> memberikan makna kedalam kode kita

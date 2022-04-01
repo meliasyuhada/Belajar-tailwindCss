@@ -1,0 +1,31 @@
+Materi dari Pak Shandika Galih
+https://www.youtube.com/watch?v=_38OWbFYYh4&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h&index=4
+https://tailwindcss.com/docs/utility-first
+
+utilities
+1. Preflight
+2. Spacing & Sizing
+3. Typograpy
+4. Colors
+5. Background & Border
+6. Rounding & Shadow
+7. Pseodo Classes
+8. Effect & Filters
+9. Transition, Transformation & Animation
+10. Layout & Positioning
+11. Flaxbox & grid
+12. Responsive Design
+13. Tables
+....
+
+kali ini yang akan kita pelajari terlebih dahulu ialah :
+2. Spacing & Sizing
+3. Typograpy
+4. Colors
+
+perbaikan installasi CLI video sebelumnya.
+=> jika node.js kita sudah versi 16 maka kita tidak harus menginstall postcss dan autoprefixer seperti sebelumnya
+=> npm i -D tailwindcss postcss autoprefixer
+=> namun jika versi node.js kita masih versi 14, 15 kita bisa mengetikan perintah seperti diatas.
+=> atau lebih baiknya cek dan updeate terlebih dahulu
+=> node -v(cara ngecek node.js)

@@ -1,0 +1,84 @@
+Materi dari Pak Shandika Galih
+https://www.youtube.com/watch?v=_lgltVQ3Lvo&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h&index=3
+
+hal yang harus diinstall/ dibutuhkan untuk belajar tailwind
+=> web browser : Crome
+=> Code editor : Visual studio code
+=> VSCode Extension :
+        Tailwind CSS IntelliSense
+        Live Preview
+        PostCss Language Support
+=> package manager : NPM(Node.js)
+=> Terminal : Powershell, Git Bash, ...
+
+buka link tailwind
+https://tailwindcss.com/docs/installation
+
+pertama kita akan mencoba menginstall / menggunakan tailwind yang play CDN
+=> cara penggunaanya yaitu hanya dengan mengcopy kan link tailwind dan dimasukkan ke tag head
+    <script src="https://cdn.tailwindcss.com"></script>
+
+Install Tailwind CSS
+selanjutnya kita akan mencoba menggunakan / menginstall tailwind CLI
+=> caranya yaitu kita harus mengistall NPM
+    1. npm init -y (untuk menginisialisasi npm)
+    2. npm install -D tailwindcss
+    3. npx tailwindcss init
+        jika eror atau tidak bisa, maka kita bisa masukkan perintah berikut.
+        untuk mengulanginya dari awal.
+        1. npm uninstall tailwindcss
+        2. npm i -D tailwindcss postcss autoprefixer
+        3. npx tailwindcss init
+
+konfigurasi template tailwind(Configure your template paths)
+=> buka file tailwind.config.js,
+=> selanjutnya isi bagian content dengan file yang kita buat, atau yang ada didalam folder tailwindnya.
+=> content: ['./public/**/*.{html,js}'],
+
+tailwind directives (Add the Tailwind directives to your CSS)
+=> buat file css baru(nama bebas)
+=> masukkan kode berikut didalam file tersebut.
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+    [tailwind itu sebelum dijalankan akan melewatkan file css yang ini,
+    begitu lewat file ini ia akan menjalankan 3 directives atau tree layer of tailwind.
+    akan dilewatkan satu persatu, maksudnya ialah :
+    base =  ia akan mereset semua style yang diberikan oleh browser]
+    component = tailwind akan meminta komponen didalam library. misal container, grid system, dll
+    utilities = kelas2 utility yang akan kita pakai.
+
+start the tailwind CLI build proces
+=> npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+atau dari file yang kita buat tadi 
+=> npx tailwindcss -i ./input.css -o ./output.css --watch
+ini untuk kita
+=> npx tailwindcss -i ./src/css/input.css -o ./public/css/style.css --watch
+
+Start using Tailwind in your HTML
+<link rel="stylesheet" href="css/style.css" />
+
+example :
+<h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
+
+
+jika kita ingin keluar, atau berhenti sejenak.
+untuk masuknya maka akan ribet jika kita menulis kan scrip panjang seperti ini
+=> npx tailwindcss -i ./src/css/input.css -o ./public/css/style.css --watch
+maka kita bisa mempersingkatnya.
+buka file package.json
+ubah yang bagian script, dengan nama dev. seperti dibawah ini.
+"scripts": {
+    "dev" : "npx tailwindcss -i ./src/css/input.css -o ./public/css/style.css --watch"
+  },
+
+jadi jika kita masuk kembali ke project ini, kita tinggal menjalankan di Terminal
+=> npm run dev
+
+cara mengecilkan size css
+=> buka terminal 
+=> npx tailwindcss -o ./public/css/final.css --minify
+=> namun perintah diatas digunakan jika project kita sudah selesai.
+=> dan file css nya juga harus dipindahkan, yang awalnya stayle.css menjadi final.css
